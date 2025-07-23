@@ -10,10 +10,6 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  * DTO que representa un movimiento individual de préstamo.
  * Contiene toda la información de una transacción específica
  * del producto consultado.
- * 
- * Este DTO mapea la información que viene del backend SOAP
- * y se estructura según la respuesta del servicio MovimientosPrestamo.
- * 
  * @author Sistema de Integración
  * @since 2025-01-28
  * @version 1.0

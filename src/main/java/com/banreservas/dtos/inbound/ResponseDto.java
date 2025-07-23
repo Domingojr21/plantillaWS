@@ -1,25 +1,22 @@
 package com.banreservas.dtos.inbound;
 
 import java.io.Serializable;
-import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 /**
- * DTO de respuesta principal para el servicio de últimos movimientos de préstamo.
- * Contiene la lista de productos con sus respectivos movimientos consultados.
- * 
- * Este DTO representa la estructura final de respuesta que se enviará
- * al consumidor del microservicio, manteniendo la compatibilidad con
- * el formato del Integration Message de salida.
+ * DTO de respuesta principal que sigue los lineamientos de desarrollo.
+ * Estructura estándar con header (responseCode y responseMessage) y body.
  * 
  * @author Sistema de Integración
- * @since 2025-01-28
+ * @since 2025-07-22
  * @version 1.0
  */
 @RegisterForReflection
 public record ResponseDto(
-        @JsonProperty("products") 
-        List<ProductMovementsDto> products) implements Serializable {
+       @JsonProperty("header") 
+        ResponseHeaderDto header,
+        @JsonProperty("body") 
+        ProductsResponseDto body) implements Serializable {
 }

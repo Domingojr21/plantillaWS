@@ -26,17 +26,17 @@ public class RequestHeaders {
     /**
      * Nombre del encabezado que representa el ID del consumidor.
      */
-    public static final String ID_CONSUMIDOR = "id_consumidor";
+    public static final String CHANNEL = "channel";
 
     /**
      * Nombre del encabezado que representa al usuario de la solicitud.
      */
-    public static final String USUARIO = "usuario";
+    public static final String USER = "user";
 
     /**
      * Nombre del encabezado que representa la fecha y hora de la solicitud.
      */
-    public static final String FECHA_HORA = "fecha_hora";
+    public static final String FECHA_HORA = "dateTime";
 
     /**
      * Nombre del encabezado que representa el terminal desde el cual se realiza la
@@ -47,18 +47,18 @@ public class RequestHeaders {
     /**
      * Nombre del encabezado que representa la operación asociada a la solicitud.
      */
-    public static final String OPERACION = "operacion";
+    public static final String OPERATION = "operation";
 
     /**
      * Lista de todos los encabezados definidos en esta clase.
      * 
      * @see #SESSION_ID
-     * @see #ID_CONSUMIDOR
-     * @see #USUARIO
+     * @see #CHANNEL
+     * @see #USER
      * @see #FECHA_HORA
      * @see #TERMINAL
-     * @see #OPERACION
+     * @see #OPERATION
      */
     public static final List<String> HEADERS = List.of(
-            SESSION_ID, ID_CONSUMIDOR, USUARIO, FECHA_HORA, TERMINAL, OPERACION);
+            SESSION_ID, CHANNEL, USER, FECHA_HORA, TERMINAL, OPERATION);
 }

@@ -1,10 +1,9 @@
 package com.banreservas.services.contracts;
 
 /**
- * Service interface for date utility operations.
- * This interface defines the contract for date calculations
- * that replicate the ESQL date functions used in the original
- * integration message processing.
+ * Servicio para operaciones de utilidades de fecha.
+ * Define el contrato para cálculos de fecha que replican 
+ * las funciones ESQL originales.
  * 
  * @author Integration System
  * @since 2025-07-21
@@ -13,21 +12,17 @@ package com.banreservas.services.contracts;
 public interface IDateUtilService {
 
     /**
-     * Calculates a date that is a specified number of months before the current date.
-     * This method replicates the exact logic from the ESQL function:
-     * Calcular_Ultima_Fecha_MesesP(IN _Meses CHARACTER)
+     * Calcula una fecha que es un número específico de meses antes de la fecha actual.
      * 
-     * @param months The number of months to subtract from the current date
-     * @return A string representing the calculated date in ISO format (yyyy-MM-dd'T'00:00:00)
+     * @param months El número de meses a restar de la fecha actual
+     * @return Cadena representando la fecha calculada en formato ISO (yyyy-MM-dd'T'00:00:00)
      */
     String calculatePreviousDateByMonths(int months);
 
-    /**
-     * Gets the current date in the format required by the SOAP service.
-     * This method formats the current timestamp to match the expected
-     * format for the fechaFinal parameter.
+     /**
+     * Obtiene la fecha actual en el formato requerido por el servicio SOAP.
      * 
-     * @return A string representing the current date in ISO format (yyyy-MM-dd'T'00:00:00)
+     * @return Cadena representando la fecha actual en formato ISO (yyyy-MM-dd'T'00:00:00)
      */
     String getCurrentDateFormatted();
 }

@@ -12,12 +12,9 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 /**
- * XML wrapper class for deserializing SOAP XML responses.
- * This class is only used for Jackson XML deserialization and then
- * converted to the proper SoapResponseDto record.
- * 
- * This is a workaround for Jackson XML limitations with records
- * that have @JacksonXmlRootElement annotations.
+ * Clase wrapper XML para deserializar respuestas XML de SOAP.
+ * Esta clase se usa únicamente para deserialización XML de Jackson
+ * y luego se convierte al record SoapResponseDto apropiado.
  * 
  * @author Integration System
  * @since 2025-07-21
@@ -47,11 +44,6 @@ public class SoapXmlWrapper implements Serializable {
         this.movements = movements;
     }
 
-    /**
-     * Converts this XML wrapper to a proper SoapResponseDto record.
-     * 
-     * @return SoapResponseDto record with the movements data
-     */
     public SoapResponseDto toRecord() {
         return new SoapResponseDto(movements);
     }

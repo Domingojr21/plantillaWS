@@ -10,10 +10,6 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  * DTO que representa un producto con sus movimientos asociados.
  * Contiene la información del producto y la lista de todos sus movimientos
  * consultados en el rango de fechas especificado.
- * 
- * Este DTO estructura la respuesta final que se enviará al consumidor,
- * organizando la información del producto junto con sus movimientos.
- * 
  * @author Sistema de Integración
  * @since 2025-01-28
  * @version 1.0

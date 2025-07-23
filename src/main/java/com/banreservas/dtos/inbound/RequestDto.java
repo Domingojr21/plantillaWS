@@ -10,10 +10,6 @@ import jakarta.validation.constraints.NotEmpty;
  * DTO de entrada para el servicio de últimos movimientos de préstamo.
  * Contiene la información del producto (número de préstamo) para consultar
  * sus movimientos.
- * 
- * Este DTO representa la sección 'Data' del Integration Message de entrada,
- * específicamente la información del producto del cual se consultarán los movimientos.
- * 
  * @author Sistema de Integración
  * @since 2025-01-28
  * @version 1.0
