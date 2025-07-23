@@ -10,8 +10,8 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  * DTO que representa un movimiento individual de préstamo.
  * Contiene toda la información de una transacción específica
  * del producto consultado.
- * @author Sistema de Integración
- * @since 2025-01-28
+ * @author Consultor Domingo Ruiz - C-DJruiz@banreservas.com
+ * @since 2025-07-21
  * @version 1.0
  */
 @RegisterForReflection

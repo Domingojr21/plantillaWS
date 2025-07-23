@@ -21,7 +21,7 @@ import jakarta.ws.rs.ext.Provider;
  * Este mapper captura instancias de WebApplicationException y las convierte
  * a respuestas HTTP apropiadas con formato de error correcto.
  * 
- * @author Sistema de Integración
+ * @author Consultor Domingo Ruiz - C-DJruiz@banreservas.com
  * @since 2025-07-22
  * @version 1.0
  */
@@ -57,9 +57,7 @@ public class WebApplicationExceptionMapper implements ExceptionMapper<WebApplica
         
         // Crear respuesta completa con estructura estándar
         ResponseDto errorResponse = new ResponseDto(errorHeader, emptyBody);
-        
-        Log.debugf("[SessionId: %s] Retornando respuesta %d", sessionId, statusCode);
-        
+    
         return Response.status(statusCode)
                 .entity(errorResponse)
                 .header("sessionId", sessionId)

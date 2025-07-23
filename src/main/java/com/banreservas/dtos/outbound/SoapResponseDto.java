@@ -9,7 +9,7 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
 /**
  * DTO para mapear la respuesta XML completa del servicio SOAP MovimientosPrestamo.
  * 
- * @author Sistema de Integración
+ * @author Consultor Domingo Ruiz - C-DJruiz@banreservas.com
  * @since 2025-07-21
  * @version 1.0
  */

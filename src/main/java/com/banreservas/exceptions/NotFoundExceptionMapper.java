@@ -22,7 +22,7 @@ import jakarta.ws.rs.ext.Provider;
  * Este mapper captura instancias de NotFoundException y las convierte
  * a respuestas HTTP apropiadas con formato de error correcto.
  * 
- * @author Sistema de Integración
+ * @author Consultor Domingo Ruiz - C-DJruiz@banreservas.com
  * @since 2025-07-22
  * @version 1.0
  */
@@ -50,8 +50,6 @@ public class NotFoundExceptionMapper implements ExceptionMapper<NotFoundExceptio
         ProductsResponseDto emptyBody = new ProductsResponseDto(List.of(emptyProduct));
         
         ResponseDto errorResponse = new ResponseDto(errorHeader, emptyBody);
-        
-        LOG.debugf("[SessionId: %s] Retornando respuesta 404", sessionId);
         
         return Response.status(Response.Status.NOT_FOUND)
                 .entity(errorResponse)

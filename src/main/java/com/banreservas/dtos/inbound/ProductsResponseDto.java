@@ -8,8 +8,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * DTO de respuesta principal para el servicio de últimos movimientos de préstamo.
  * Contiene la lista de productos con sus respectivos movimientos consultados.
- * @author Sistema de Integración
- * @since 2025-01-28
+ * @author Consultor Domingo Ruiz - C-DJruiz@banreservas.com
+ * @since 2025-07-21
  * @version 1.0
  */
 public record ProductsResponseDto(   

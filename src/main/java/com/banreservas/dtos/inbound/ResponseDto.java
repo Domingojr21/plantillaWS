@@ -9,7 +9,7 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
  * DTO de respuesta principal que sigue los lineamientos de desarrollo.
  * Estructura estándar con header (responseCode y responseMessage) y body.
  * 
- * @author Sistema de Integración
+ * @author Consultor Domingo Ruiz - C-DJruiz@banreservas.com
  * @since 2025-07-22
  * @version 1.0
  */

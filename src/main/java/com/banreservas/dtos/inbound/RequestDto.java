@@ -10,8 +10,8 @@ import jakarta.validation.constraints.NotEmpty;
  * DTO de entrada para el servicio de últimos movimientos de préstamo.
  * Contiene la información del producto (número de préstamo) para consultar
  * sus movimientos.
- * @author Sistema de Integración
- * @since 2025-01-28
+ * @author Consultor Domingo Ruiz - C-DJruiz@banreservas.com
+ * @since 2025-07-21
  * @version 1.0
  */
 @RegisterForReflection

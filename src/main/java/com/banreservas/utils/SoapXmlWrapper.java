@@ -5,19 +5,17 @@ import java.util.List;
 
 import com.banreservas.dtos.outbound.SoapMovementDto;
 import com.banreservas.dtos.outbound.SoapResponseDto;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import io.quarkus.runtime.annotations.RegisterForReflection;
 
 /**
- * Clase wrapper XML para deserializar respuestas XML de SOAP.
- * Esta clase se usa únicamente para deserialización XML de Jackson
- * y luego se convierte al record SoapResponseDto apropiado.
+ * Wrapper XML simplificado para deserializar respuestas SOAP.
+ * Se usa únicamente para mapeo XML de Jackson.
  * 
- * @author Integration System
- * @since 2025-07-21
+ * @author Consultor Domingo Ruiz - C-DJruiz@banreservas.com
+ * @since 2025-07-22
  * @version 1.0
  */
 @RegisterForReflection
@@ -26,14 +24,9 @@ public class SoapXmlWrapper implements Serializable {
 
     @JacksonXmlProperty(localName = "MovimientoPrestamo")
     @JacksonXmlElementWrapper(useWrapping = false)
-    @JsonProperty("movimientosPrestamo")
     private List<SoapMovementDto> movements;
 
     public SoapXmlWrapper() {
-    }
-
-    public SoapXmlWrapper(List<SoapMovementDto> movements) {
-        this.movements = movements;
     }
 
     public List<SoapMovementDto> getMovements() {
